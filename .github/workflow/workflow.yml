@@ -10,16 +10,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container: node:20-alpine
-<<<<<<< HEAD
     steps:
 	  - name: Checkout
-      uses: actions/checkout@v3
-=======
-    steps: 
-    	- name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install dependencies
+	  - name: Install dependencies
         run: |
           npm ci
->>>>>>> dd1db0a (steps install dependencie)
